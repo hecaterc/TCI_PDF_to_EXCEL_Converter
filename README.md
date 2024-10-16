@@ -6,7 +6,6 @@ This Python-based desktop application converts tabular data from PDFs into Excel
 ## How to Use
 
 1. **Launch the Application**: Run the main.py file to open the interface.
-   ![Launch](images/GUI.png)
 
 2. **Browse for a PDF File**: Click the "Browse PDF" button to select a PDF file from your computer.
    ![Browse](images/Browse.png)
@@ -23,8 +22,11 @@ This Python-based desktop application converts tabular data from PDFs into Excel
 
 ## Requirements
 - Python 3.8+
+- `tabula-py`
+- `pandas`
+- `tkinter`
 - Java 8+ (for `tabula-py`)
-- Other python dependencies are listing in the requirements.txt file
+
 
 ## Additional Build Instructions
 If you want to run this application on any device without python and python dependencies installed. You can run the following command in the terminal to create a standalone .exe file, this allows users without any python knowledge to use the application: pyinstaller --onefile --windowed --add-data "/tabula-1.0.5-jar-with-dependencies.jar;tabula" --name pdf_to_excel_converter main.py
